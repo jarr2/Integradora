@@ -51,7 +51,107 @@
       </nav>
 </header>
 <body>
-    <h1>P1</h1>
+  <div class="container-fluid " >
+    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 position-relative top-0 start-50 translate-middle-x p-2 mt-2" style="background-color: rgb(127, 255, 127);">
+        <p class="display-6 text-center fw-bold">IPs</p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 position-relative top-0 start-50 translate-middle-x p-2 mt-2" style="background-color: rgb(127, 255, 127);">
+      <div class="row">
+        <div>
+          <label for="exampleFormControlInput1" class="form-label">IP</label>
+        </div>
+        <div class="col-1">
+          <input type="number" class="form-control" id="octeto1" min="1"  max="256" placeholder="192">  
+        </div>
+        <div class="col-1">
+          <input type="number" class="form-control" id="octeto2" placeholder="168">  
+        </div>
+        <div class="col-1">
+          <input type="number" class="form-control" id="octeto3" placeholder="1">  
+        </div>
+        <div class="col-1">
+          <input type="number" class="form-control" id="octeto4" placeholder="100">  
+        </div>
+        <div class="col-1">
+          <select class="form-select" aria-label="Default select example" id="messi">
+            <option value="1">/1</option>
+            <option value="2">/2</option>
+            <option value="3">/3</option>
+            <option value="4">/4</option>
+            <option value="5">/5</option>
+            <option value="6">/6</option>
+            <option value="7">/7</option>
+            <option value="8">/8</option>
+            <option value="9">/9</option>
+            <option value="10">/10</option>
+            <option value="11">/11</option>
+            <option value="12">/12</option>
+            <option value="13">/13</option>
+            <option value="14">/14</option>
+            <option value="15">/15</option>
+            <option value="16">/16</option>
+            <option value="17">/17</option>
+            <option value="18">/18</option>
+            <option value="19">/19</option>
+            <option value="20">/20</option>
+            <option value="21">/21</option>
+            <option value="22">/22</option>
+            <option value="23">/23</option>
+            <option value="24">/24</option>
+            <option value="25">/25</option>
+            <option value="26">/26</option>
+            <option value="27">/27</option>
+            <option value="28">/28</option>
+            <option value="29">/29</option>
+            <option value="30">/30</option>
+          </select>
+        </div>
+        <div class="col-1">
+          <button type="button"  class="btn btn-success" onclick="recabarDatos()">Go</button>
+        </div>
+      </div>
+      
+    </div>
 </body>
 <script src="../resources/js/bootstrap.bundle.min.js"></script>
+<script>
+   function recabarDatos(){
+      octeto1 = document.getElementById("octeto1").value
+      octeto2 = document.getElementById("octeto2").value
+      octeto3 = document.getElementById("octeto3").value
+      octeto4 = document.getElementById("octeto4").value
+      mascara = document.getElementById("messi").value
+      octeto1= parseInt(octeto1,10)
+      octeto1= octeto1.toString(2)
+      octeto2= parseInt(octeto2,10)
+      octeto2= octeto2.toString(2)
+      octeto3= parseInt(octeto3,10)
+      octeto3= octeto3.toString(2)
+      octeto4= parseInt(octeto4,10)
+      octeto4= octeto4.toString(2)
+      ip = ""
+      let miArreglo = [octeto1,octeto2,octeto3,octeto4]
+      //unir octetos
+      for (let i = 0; i < 4; i++) { 
+        bits= ""
+        cont= miArreglo[i].length
+        bin_f= 8-cont;
+        for(let i = 0; i< bin_f; i++){
+            bits= "0"+bits
+        }
+        miArreglo[i]= bits+miArreglo[i]
+        ip= ip+miArreglo[i]
+      }
+      parte_host = ip.substring(mascara);
+      bc = Math.pow(2, (32- parseInt(mascara)))-1
+      clasificar = parseInt(parte_host, 2);
+      if(clasificar == 0){
+        alert("red")
+      }else if(clasificar== bc){
+        alert("Broadcast")
+      }else{
+        alert("Host")
+      }
+   }
+</script>
 </html>
