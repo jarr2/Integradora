@@ -103,6 +103,71 @@
             </div>
         </div>
     </div>
+    <div class="calculator">
+        <h2>Calculadora de Experiencia por Nivel</h2>
+        <label for="level">Selecciona un nivel:</label>
+        <select id="level">
+            <option value="0">Nivel 0</option>
+            <option value="1">Nivel 1</option>
+            <option value="2">Nivel 2</option>
+            <option value="3">Nivel 3</option>
+            <option value="4">Nivel 4</option>
+            <option value="5">Nivel 5</option>
+            <option value="6">Nivel 6</option>
+            <option value="7">Nivel 7</option>
+            <option value="8">Nivel 8</option>
+            <option value="9">Nivel 9</option>
+            <option value="10">Nivel 10</option>
+            <option value="11">Nivel 11</option>
+            <option value="12">Nivel 12</option>
+            <option value="13">Nivel 13</option>
+            <option value="14">Nivel 14</option>
+            <option value="15">Nivel 15</option>
+            <option value="16">Nivel 16</option>
+            <option value="17">Nivel 17</option>
+            <option value="18">Nivel 18</option>
+            <option value="19">Nivel 19</option>
+            <option value="20">Nivel 20</option>
+            <option value="21">Nivel 21</option>
+            <option value="22">Nivel 22</option>
+            <option value="23">Nivel 23</option>
+            <option value="24">Nivel 24</option>
+            <option value="25">Nivel 25</option>
+            <option value="26">Nivel 26</option>
+            <option value="27">Nivel 27</option>
+            <option value="28">Nivel 28</option>
+            <option value="29">Nivel 29</option>
+            <option value="30">Nivel 30</option>
+            <option value="31">Nivel 31</option>
+            <option value="32">Nivel 32</option>
+            <option value="33">Nivel 33</option>
+            <option value="34">Nivel 34</option>
+            <option value="35">Nivel 35</option>
+            <option value="36">Nivel 36</option>
+            <option value="37">Nivel 37</option>
+            <option value="38">Nivel 38</option>
+            <option value="39">Nivel 39</option>
+            <option value="40">Nivel 40</option>
+            <option value="41">Nivel 41</option>
+            <option value="42">Nivel 42</option>
+            <option value="43">Nivel 43</option>
+            <option value="44">Nivel 44</option>
+            <option value="45">Nivel 45</option>
+            <option value="46">Nivel 46</option>
+            <option value="47">Nivel 47</option>
+            <option value="48">Nivel 48</option>
+            <option value="49">Nivel 49</option>
+            <option value="50">Nivel 50</option>
+            <option value="51">Nivel 51</option>
+            <option value="52">Nivel 52</option>
+            <option value="53">Nivel 53</option>
+            <option value="54">Nivel 54</option>
+            <option value="55">Nivel 55</option>
+            <option value="prestige">Prestigio</option>
+        </select>
+        <button onclick="getExperience()">Calcular</button>
+        <p id="output"></p>
+    </div>
     <div class="article-asset-table article-asset-large m-hr-scroll" style="display: grid; place-items: center; height: 100vh;">
         <div class="asset-content">
             <table class="table-container" >
@@ -389,72 +454,7 @@
             </table>
         </div>
     </div>
-    
-    <div class="calculator">
-        <h2>Calculadora de Experiencia por Nivel</h2>
-        <label for="level">Selecciona un nivel:</label>
-        <select id="level">
-            <option value="0">Nivel 0</option>
-            <option value="1">Nivel 1</option>
-            <option value="2">Nivel 2</option>
-            <option value="3">Nivel 3</option>
-            <option value="4">Nivel 4</option>
-            <option value="5">Nivel 5</option>
-            <option value="6">Nivel 6</option>
-            <option value="7">Nivel 7</option>
-            <option value="8">Nivel 8</option>
-            <option value="9">Nivel 9</option>
-            <option value="10">Nivel 10</option>
-            <option value="11">Nivel 11</option>
-            <option value="12">Nivel 12</option>
-            <option value="13">Nivel 13</option>
-            <option value="14">Nivel 14</option>
-            <option value="15">Nivel 15</option>
-            <option value="16">Nivel 16</option>
-            <option value="17">Nivel 17</option>
-            <option value="18">Nivel 18</option>
-            <option value="19">Nivel 19</option>
-            <option value="20">Nivel 20</option>
-            <option value="21">Nivel 21</option>
-            <option value="22">Nivel 22</option>
-            <option value="23">Nivel 23</option>
-            <option value="24">Nivel 24</option>
-            <option value="25">Nivel 25</option>
-            <option value="26">Nivel 26</option>
-            <option value="27">Nivel 27</option>
-            <option value="28">Nivel 28</option>
-            <option value="29">Nivel 29</option>
-            <option value="30">Nivel 30</option>
-            <option value="31">Nivel 31</option>
-            <option value="32">Nivel 32</option>
-            <option value="33">Nivel 33</option>
-            <option value="34">Nivel 34</option>
-            <option value="35">Nivel 35</option>
-            <option value="36">Nivel 36</option>
-            <option value="37">Nivel 37</option>
-            <option value="38">Nivel 38</option>
-            <option value="39">Nivel 39</option>
-            <option value="40">Nivel 40</option>
-            <option value="41">Nivel 41</option>
-            <option value="42">Nivel 42</option>
-            <option value="43">Nivel 43</option>
-            <option value="44">Nivel 44</option>
-            <option value="45">Nivel 45</option>
-            <option value="46">Nivel 46</option>
-            <option value="47">Nivel 47</option>
-            <option value="48">Nivel 48</option>
-            <option value="49">Nivel 49</option>
-            <option value="50">Nivel 50</option>
-            <option value="51">Nivel 51</option>
-            <option value="52">Nivel 52</option>
-            <option value="53">Nivel 53</option>
-            <option value="54">Nivel 54</option>
-            <option value="55">Nivel 55</option>
-            <option value="prestige">Prestigio</option>
-        </select>
-        <button onclick="getExperience()">Calcular</button>
-        <p id="output"></p>
-    </div>
+
 </body>
 <script src="../resources/js/bootstrap.bundle.min.js"></script>
 <script>
