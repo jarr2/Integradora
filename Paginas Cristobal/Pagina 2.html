@@ -51,7 +51,64 @@
       </nav>
 </header>
 <body>
-    <h1>P2</h1>
+  <div class="container-fluid " >
+    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 position-relative top-0 start-50 translate-middle-x p-2 mt-2" style="background-color: rgb(127, 255, 127);">
+        <p class="display-6 text-center fw-bold">Número divisible entre 3</p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 position-relative top-0 start-50 translate-middle-x p-2 mt-2" style="background-color: rgb(127, 255, 127);">
+      <div class="row">
+        <form class="form-control">
+            <label class="fw-bold">Ingresa el número a evaluar</label>
+            <input type="number" class="form-control" id="i1" placeholder="Culquier numero" min="0" required>  
+            <div class="col-2">
+              <button type="button"  class="btn btn-success" onclick="f1()">Enviar</button>
+            </div>
+            <label class="fw-bold">Resultado</label>
+            <input type="text" class="form-control" id="r1" placeholder="Resultado"  required>
+        </form>
+     </div>
+    </div> 
+  </div>
 </body>
 <script src="../resources/js/bootstrap.bundle.min.js"></script>
+<script>
+function f1() {
+  // Obtener los valores de los inputs 
+  i1 = document.getElementById("i1").value
+  r1 = document.getElementById("r1").value
+  // Validar si los campos están vacíos o incorrectos 
+  if (i1 === "" || (i1 < 0 ) ) { 
+    alert("Por favor, completa todos los campos correctamente."); 
+    event.preventDefault(); // Evita que el formulario se envíe 
+    return false; // Evita que la función se ejecute 
+    } 
+    // Si todo está correcto, la función se puede ejecutar 
+    recabarDatos();
+  };   
+
+function recabarDatos(){
+
+  i1 = document.getElementById("i1").value
+  r1 = document.getElementById("r1").value
+  //sumar dígitos
+  let suma=0
+  for (let i = 0; i < i1.length ; i++) { 
+    suma= suma+ parseInt(i1[i])
+  }
+
+  
+  const nuevoElemento = document.createElement('p'); 
+  contenedor = document.getElementById('r1');
+  contenedor.innerHTML= "";
+  
+  nuevoElemento.className = "fw-bold"
+  if(suma%3 == 0){
+    resultado = "Este número es divisible entre 3";
+  }else{
+    resultado = "Este número no es divisible entre 3";
+  }
+  
+  contenedor.value=resultado;
+}
+</script>
 </html>

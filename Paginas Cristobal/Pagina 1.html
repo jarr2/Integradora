@@ -55,25 +55,26 @@
     <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 position-relative top-0 start-50 translate-middle-x p-2 mt-2" style="background-color: rgb(127, 255, 127);">
         <p class="display-6 text-center fw-bold">IPs</p>
     </div>
+    <form class="form-control col-10" id="form1">
     <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 position-relative top-0 start-50 translate-middle-x p-2 mt-2" style="background-color: rgb(127, 255, 127);">
       <div class="row">
         <div>
           <label for="exampleFormControlInput1" class="form-label">IP</label>
         </div>
         <div class="col-1">
-          <input type="number" class="form-control" id="octeto1" min="1"  max="256" placeholder="192">  
+          <input type="number" class="form-control" id="octeto1" min="0"  max="255"  required placeholder="192" >  
         </div>
         <div class="col-1">
-          <input type="number" class="form-control" id="octeto2" placeholder="168">  
+          <input type="number" class="form-control" id="octeto2" placeholder="168" min="0"  max="255"  required>  
         </div>
         <div class="col-1">
-          <input type="number" class="form-control" id="octeto3" placeholder="1">  
+          <input type="number" class="form-control" id="octeto3" placeholder="1" min="0"  max="255"  required>  
         </div>
         <div class="col-1">
-          <input type="number" class="form-control" id="octeto4" placeholder="100">  
+          <input type="number" class="form-control" id="octeto4" placeholder="100" min="0"  max="255"  required>  
         </div>
         <div class="col-1">
-          <select class="form-select" aria-label="Default select example" id="messi">
+          <select class="form-select" aria-label="Default select example" id="messi" required>
             <option value="1">/1</option>
             <option value="2">/2</option>
             <option value="3">/3</option>
@@ -106,16 +107,38 @@
             <option value="30">/30</option>
           </select>
         </div>
-        <div class="col-1">
-          <button type="button"  class="btn btn-success" onclick="recabarDatos()">Go</button>
+        <div class="col-2">
+          <button type="button"  class="btn btn-success" onclick="f1()">Enviar</button>
+        </div>
+        <div class="col-2" id="cr7">
+          
         </div>
       </div>
       
     </div>
+    </form>
+    
 </body>
 <script src="../resources/js/bootstrap.bundle.min.js"></script>
 <script>
+    function f1() {
+      // Obtener los valores de los inputs 
+      octeto1 = document.getElementById("octeto1").value
+      octeto2 = document.getElementById("octeto2").value
+      octeto3 = document.getElementById("octeto3").value
+      octeto4 = document.getElementById("octeto4").value
+      // Validar si los campos están vacíos o incorrectos 
+      if ((octeto1 === "" || octeto2 === "" || octeto3 === "" || octeto4 === "" ) || (octeto1 < 0 || octeto1 > 255) || (octeto2 < 0 || octeto2 > 255) || (octeto3 < 0 || octeto3 > 255) || (octeto4 < 0 || octeto4 > 255)) { 
+        alert("Por favor, completa todos los campos correctamente."); 
+        event.preventDefault(); // Evita que el formulario se envíe 
+        return false; // Evita que la función se ejecute 
+        } 
+        // Si todo está correcto, la función se puede ejecutar 
+        recabarDatos();
+      };   
+
    function recabarDatos(){
+
       octeto1 = document.getElementById("octeto1").value
       octeto2 = document.getElementById("octeto2").value
       octeto3 = document.getElementById("octeto3").value
@@ -145,13 +168,21 @@
       parte_host = ip.substring(mascara);
       bc = Math.pow(2, (32- parseInt(mascara)))-1
       clasificar = parseInt(parte_host, 2);
+      const nuevoElemento = document.createElement('p'); 
+      contenedor = document.getElementById('cr7');
+      contenedor.innerHTML= "";
       if(clasificar == 0){
-        alert("red")
+       
+        nuevoElemento.textContent = 'IP de Red.'; 
+        
       }else if(clasificar== bc){
-        alert("Broadcast")
+        nuevoElemento.textContent = 'IP de Broadcast.'; 
       }else{
-        alert("Host")
+        nuevoElemento.textContent = 'IP de Host.'; 
       }
+      nuevoElemento.className = "fw-bold"
+      
+      contenedor.appendChild(nuevoElemento);
    }
 </script>
 </html>
