@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Integradora</title>
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-success" style="background-color:  rgb(127, 255, 127);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Arturo páginas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1</a></li>
+                  <li><a class="dropdown-item" href="#">2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Renteria páginas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Pagina1.html">1</a></li>
+                  <li><a class="dropdown-item" href="Pagina2.html">2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cristobal páginas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../Paginas Cristobal/Pagina 1.html">1</a></li>
+                  <li><a class="dropdown-item" href="../Paginas Cristobal/Pagina 2.html">2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<body>
+<!-- Page content-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">Bienvenido a la guía del Easter egg:</h1>
+                    <h1 class="fw-bolder mb-1">Adiós, Éter oscuro</h1>
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4"><img class="img-fluid rounded" src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/wm/2024/11/black-ops-6-liberty-falls-easter-egg-end-cutscene.jpg" alt="..." /></figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                    <p class="fs-5 mb-4">En este blog encontrarás ayuda a la hora de realizar el paso de alinear los Retroproyectores en Liberty Falls.</p>
+                    <h2 class="fw-bolder mb-4 mt-5">Ubicación 1</h2>
+                    <p class="fs-5 mb-4">El primer mostrador de Strauss está en un montículo cubierto de hierba a la derecha de las escaleras de la cima de la colina que bajan de la Iglesia del Éter Oscuro.</p>
+                    <figure class="mb-4"><img class="img-fluid rounded" src="https://assetsio.gnwcdn.com/strauss-projector-1.png?width=690&quality=75&format=jpg&auto=webp" alt="..." /></figure>
+                </section>
+                <section class="mb-5">
+                    <h2 class="fw-bolder mb-4 mt-5">Ubicación 2</h2>
+                    <p class="fs-5 mb-4">Para el segundo mostrador de Strauss, diríjase al cobertizo de herramientas del freno de mano y gire a la derecha, como si fuera a bajar las escaleras hacia Washington Avenue. A su derecha hay un pequeño parche con un proyector en el medio.</p>
+                    <figure class="mb-4"><img class="img-fluid rounded" src="https://assetsio.gnwcdn.com/strauss-projector-2.png?width=690&quality=75&format=jpg&auto=webp" alt="..." /></figure>
+                </section>
+                <section class="mb-5">
+                    <h2 class="fw-bolder mb-4 mt-5">Ubicación 3</h2>
+                    <p class="fs-5 mb-4">Desde la azotea donde construimos el dispositivo LTG, escanea el perímetro hasta que encuentres una tabla de madera marcada con una cruz roja. Hazlo explotar pagando 750 de esencia y desplázate hasta la zona que acabas de desbloquear para encontrar el proyector final.</p>
+                    <figure class="mb-4"><img class="img-fluid rounded" src="https://assetsio.gnwcdn.com/strauss-projector-3.png?width=690&quality=75&format=jpg&auto=webp" alt="..." /></figure>
+                    <p class="fs-5 mb-4">A continuación puedes encontrar una pequeña ayuda en donde solo debes seleccionar qué color es el Medidor y te dirá de qué color alinear el Retroproyector.</p>
+                </section>
+            </article>
+        </div>
+    </div>
+</div>
+<h1>Medidor y Proyector</h1>
+    <label for="medidor">Selecciona el color del medidor:</label>
+    <select id="medidor">
+        <option value="verde">Verde</option>
+        <option value="amarillo">Amarillo</option>
+        <option value="rojo">Rojo</option>
+    </select>
+    <button onclick="mostrarProyector()">Calcular</button>
+    <p id="output"></p>
+<div>
+    <p>Ahora bien, esperamos que esta página te haya sido de ayuda para completar el easter egg y si estás en proceso de hacerlo, Te deseamos suerte!</p>
+</div>
+</body>
+<script src="../resources/js/bootstrap.bundle.min.js"></script>
+<script>
+    function mostrarProyector() {
+        const medidor = document.getElementById("medidor").value;
+        const output = document.getElementById("output");
+
+        let proyector = "";
+        if (medidor === "verde") {
+            proyector = "Proyector rojo";
+        } else if (medidor === "amarillo") {
+            proyector = "Proyector amarillo";
+        } else if (medidor === "rojo") {
+            proyector = "Proyector verde";
+        }
+
+        output.textContent = ` ${proyector}`;
+    }
+</script>
+</html>

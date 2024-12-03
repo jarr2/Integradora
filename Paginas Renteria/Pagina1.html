@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <title>Integradora</title>
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .table-container {
+            margin-bottom: 40px;
+        }
+        .calculator {
+            margin-top: 40px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        table th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    </head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-success" style="background-color:  rgb(127, 255, 127);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Arturo páginas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1</a></li>
+                  <li><a class="dropdown-item" href="#">2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Renteria páginas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Pagina1.html">1</a></li>
+                  <li><a class="dropdown-item" href="Pagina2.html">2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cristobal páginas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../Paginas Cristobal/Pagina 1.html">1</a></li>
+                  <li><a class="dropdown-item" href="../Paginas Cristobal/Pagina 2.html">2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<body>
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Bienvenido al blog Zomber!</h1>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4"><img class="img-fluid rounded" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/bo6/BO6-ZOMBIES-888-TOUT.jpg" alt="..." /></figure>
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p class="fs-5 mb-4">En este blog encontrarás ayudas, trucos y consejos acerca de Bo6 Zombies.</p>
+                        <h2 class="fw-bolder mb-4 mt-5">¿Cómo subir de nivel rápido?</h2>
+                        <p class="fs-5 mb-4">Pricipalmente, podemos decir que solo jugando subirás de nivel, sin embargo, a medida que subes de nivel el requerimento de XP aumenta de manera exponencial, por lo que primero nos gustaría mostrarte los prestigios disponibles en esta entrega de Zombies.</p>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="calculator">
+        <h2>Calculadora de Experiencia por Nivel</h2>
+        <label for="level">Selecciona un nivel:</label>
+        <select id="level">
+            <option value="0">Nivel 0</option>
+            <option value="1">Nivel 1</option>
+            <option value="2">Nivel 2</option>
+            <option value="3">Nivel 3</option>
+            <option value="4">Nivel 4</option>
+            <option value="5">Nivel 5</option>
+            <option value="6">Nivel 6</option>
+            <option value="7">Nivel 7</option>
+            <option value="8">Nivel 8</option>
+            <option value="9">Nivel 9</option>
+            <option value="10">Nivel 10</option>
+            <option value="11">Nivel 11</option>
+            <option value="12">Nivel 12</option>
+            <option value="13">Nivel 13</option>
+            <option value="14">Nivel 14</option>
+            <option value="15">Nivel 15</option>
+            <option value="16">Nivel 16</option>
+            <option value="17">Nivel 17</option>
+            <option value="18">Nivel 18</option>
+            <option value="19">Nivel 19</option>
+            <option value="20">Nivel 20</option>
+            <option value="21">Nivel 21</option>
+            <option value="22">Nivel 22</option>
+            <option value="23">Nivel 23</option>
+            <option value="24">Nivel 24</option>
+            <option value="25">Nivel 25</option>
+            <option value="26">Nivel 26</option>
+            <option value="27">Nivel 27</option>
+            <option value="28">Nivel 28</option>
+            <option value="29">Nivel 29</option>
+            <option value="30">Nivel 30</option>
+            <option value="31">Nivel 31</option>
+            <option value="32">Nivel 32</option>
+            <option value="33">Nivel 33</option>
+            <option value="34">Nivel 34</option>
+            <option value="35">Nivel 35</option>
+            <option value="36">Nivel 36</option>
+            <option value="37">Nivel 37</option>
+            <option value="38">Nivel 38</option>
+            <option value="39">Nivel 39</option>
+            <option value="40">Nivel 40</option>
+            <option value="41">Nivel 41</option>
+            <option value="42">Nivel 42</option>
+            <option value="43">Nivel 43</option>
+            <option value="44">Nivel 44</option>
+            <option value="45">Nivel 45</option>
+            <option value="46">Nivel 46</option>
+            <option value="47">Nivel 47</option>
+            <option value="48">Nivel 48</option>
+            <option value="49">Nivel 49</option>
+            <option value="50">Nivel 50</option>
+            <option value="51">Nivel 51</option>
+            <option value="52">Nivel 52</option>
+            <option value="53">Nivel 53</option>
+            <option value="54">Nivel 54</option>
+            <option value="55">Nivel 55</option>
+            <option value="prestige">Prestigio</option>
+        </select>
+        <button onclick="getExperience()">Calcular</button>
+        <p id="output"></p>
+    </div>
+    <div class="article-asset-table article-asset-large m-hr-scroll" style="display: grid; place-items: center; height: 100vh;">
+        <div class="asset-content">
+            <table class="table-container" >
+                <thead>
+                    <tr>
+                        <th class="align-left highlight-row">
+                            <p>Ícono</p>
+                        </th>
+                        <th class="align-left highlight-row">
+                            <p>Prestigio</p>
+                        </th>
+                        <th class="align-left highlight-row">
+                            <p>Recompensas instantáneas</p>
+                        </th>
+                        <th class="align-left highlight-row">
+                            <p>Recompensas por nivel</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/7151fd/prestigios-black-ops-6/450_1000.jpeg" alt="Prestigio 1 Black Ops 6">
+                            <noscript><img alt="Prestigio 1 Black Ops 6" src="https://i.blogs.es/7151fd/prestigios-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO 1</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 1</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                                <li>Aspecto de operador “Invasor de Nacht”</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Der Riese"</li>
+                                <li>Paquete de chicles para ventajacolas</li>
+                                <li>Emblema "Irrupción de zombi"</li>
+                                <li>Amuleto "Baja instantánea"</li>
+                                <li>Proyecto de arma "Teddy es un mentiroso"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/9b7f60/prestigio-2-black-ops-6/450_1000.jpeg" alt="Prestigio 2 Black Ops 6">
+                            <noscript><img alt="Prestigio 2 Black Ops 6" src="https://i.blogs.es/9b7f60/prestigio-2-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO 2</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 2</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Guerra en la selva"</li>
+                                <li>Paquete de chicles de caramelos masticables</li>
+                                <li>Emblema "Locura desatada"</li>
+                                <li>Amuleto "Carta de muerte berserker"</li>
+                                <li>Proyecto de arma "Sangre del guerrero"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+
+                            <img class="sf-lazy" src="https://i.blogs.es/e64934/prestigio-3-black-ops-6/450_1000.jpeg" alt="Prestigio 3 Black Ops 6">
+                            <noscript><img alt="Prestigio 3 Black Ops 6" src="https://i.blogs.es/e64934/prestigio-3-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO 3</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 3</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Interrogatorio"</li>
+                                <li>Paquete de chicles de caramelos masticables</li>
+                                <li>Emblema "Los números"</li>
+                                <li>Amuleto "MACV-SOG"</li>
+                                <li>Aspecto de operador Payne "Me llamo..."</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/4cffa2/prestigio-4-black-ops-6/450_1000.jpeg" alt="Prestigio 4 Black Ops 6">
+                            <noscript><img alt="Prestigio 4 Black Ops 6" src="https://i.blogs.es/4cffa2/prestigio-4-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO 4</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 4</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Te damos la bienvenida a Nuketown"</li>
+                                <li>Paquete de chicles de caramelos masticables</li>
+                                <li>Emblema "Apocalipsis"</li>
+                                <li>Amuleto "Maniquí nuclear"</li>
+                                <li>Proyecto de arma "Comando Atómico"</li>
+                            </ul>
+                         </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/c1d82d/prestigio-5-black-ops-6/450_1000.jpeg" alt="Prestigio 5 Black Ops 6">
+                            <noscript><img alt="Prestigio 5 Black Ops 6" src="https://i.blogs.es/c1d82d/prestigio-5-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                        <p><strong>PRESTIGIO 5</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 5</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Batalla por LA"</li>
+                                <li>Paquete de chicles de caramelos masticables</li>
+                                <li>Emblema "Claw"</li>
+                                <li>Amuleto "Cordis Die"</li>
+                                <li>Aspecto de Toro "Pérdida absoluta"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/932444/prestigio-6-black-ops-6/450_1000.jpeg" alt="Prestigio 6 Black Ops 6">
+                            <noscript><img alt="Prestigio 6 Black Ops 6" src="https://i.blogs.es/932444/prestigio-6-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO 6</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 6</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Muelles"</li>
+                                <li>Paquete de chicles de caramelos masticables</li>
+                                <li>Emblema "Tedd"</li>
+                                <li>Amuleto "Cárcel"</li>
+                                <li>Proyecto de arma "Abominación robótica"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/d5ad6f/prestigio-7-black-ops-6/450_1000.jpeg" alt="Prestigio 7 Black Ops 6">
+                            <noscript><img alt="Prestigio 7 Black Ops 6" src="https://i.blogs.es/d5ad6f/prestigio-7-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO 7</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 7</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Caos en miniatura"</li>
+                                <li>Paquete de chicles de caramelos masticables</li>
+                                <li>Emblema "Que tengas un buen día"</li>
+                                <li>Amuleto "Dulce minúsculo"</li>
+                                <li>Aspecto de Maya "Fan de los especialistas"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/2f5ce4/prestigio-8-black-ops-6/450_1000.jpeg" alt="Prestigio 8 Black Ops 6">
+                            <noscript><img alt="Prestigio 8 Black Ops 6" src="https://i.blogs.es/2f5ce4/prestigio-8-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO 8</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 8</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Bosque congelado"</li>
+                                <li>Paquete de chicles de caramelos masticables</li>
+                                <li>Emblema "IA Corvus"</li>
+                                <li>Amuleto "Tren explosivo"</li>
+                                <li>Proyecto de arma "Élite VMP"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/0c6ffb/prestigio-9-black-ops-6/450_1000.jpeg" alt="Prestigio 9 Black Ops 6">
+                            <noscript><img alt="Prestigio 9 Black Ops 6" src="https://i.blogs.es/0c6ffb/prestigio-9-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO 9</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 9</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Te damos la bienvenida a Blackout"</li>
+                                <li>Paquete de chicles de caramelos masticables</li>
+                                <li>Emblema "¿Dónde saltamos?"</li>
+                                <li>Espray "Compra de pared de zombis"</li>
+                                <li>Aspecto de Grey "Pijama de Samantha"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/6c9b86/prestigio-10-black-ops-6/450_1000.jpeg" alt="Prestigio 10 Black Ops 6">
+                            <noscript><img alt="Prestigio 10 Black Ops 6" src="https://i.blogs.es/6c9b86/prestigio-10-black-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO 10</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio 10</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Pantalla de carga "Al otro lado"</li>
+                                <li>Paquete de chicles de caramelos masticables</li>
+                                <li>Emblema "Puerta roja"</li>
+                                <li>Amuleto "Perseus"</li>
+                                <li>Aspecto de Bailey "El arte de la guerra"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="align-left">
+                            <img class="sf-lazy" src="https://i.blogs.es/c1e50d/prestigio-maestroblack-ops-6/450_1000.jpeg" alt="Prestigio Maestroblack Ops 6">
+                            <noscript><img alt="Prestigio Maestroblack Ops 6" src="https://i.blogs.es/c1e50d/prestigio-maestroblack-ops-6/450_1000.jpeg"></noscript>
+                        </th>
+                        <td class="align-left">
+                            <p><strong>PRESTIGIO MAESTRO</strong></p>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Icono de Prestigio Maestro</li>
+                                <li>Una ficha de desbloqueo permanente</li>
+                            </ul>
+                        </td>
+                        <td class="align-left">
+                            <ul>
+                                <li>Iconos de Legado de Prestigio</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="../resources/js/bootstrap.bundle.min.js"></script>
+<script>
+    const levelsXP = {
+        0: 0,
+        1: 0,
+        2: 4500,
+        3: 5000,
+        4: 5500,
+        5: 5500,
+        6: 6000,
+        7: 6500,
+        8: 7000,
+        9: 7500,
+        10: 8000,
+        11: 8500,
+        12: 9000,
+        13: 9500,
+        14: 10000,
+        15: 10500,
+        16: 11000,
+        17: 11500,
+        18: 12000,
+        19: 12500,
+        20: 13000,
+        21: 13500,
+        22: 14500,
+        23: 15000,
+        24: 15500,
+        25: 16000,
+        26: 17000,
+        27: 17500,
+        28: 18000,
+        29: 19000,
+        30: 19500,
+        31: 20000,
+        32: 21000,
+        33: 21500,
+        34: 22500,
+        35: 23500,
+        36: 24000,
+        37: 25000,
+        38: 26000,
+        39: 26500,
+        40: 27500,
+        41: 28500,
+        42: 29500,
+        43: 30500,
+        44: 31500,
+        45: 32500,
+        46: 33500,
+        47: 34500,
+        48: 35500,
+        49: 36500,
+        50: 3800,
+        51: 39000,
+        52: 40500,
+        53: 42000,
+        54: 43500,
+        55: 45000,
+        prestige: 46500
+    };
+    function getExperience() {
+        const level = document.getElementById("level").value;
+        const experience = levelsXP[level];
+        const output = document.getElementById("output");
+
+        if (experience !== undefined) {
+            output.textContent = `Para alcanzar el nivel ${level}, necesitas ${experience} XP.`;
+        } else {
+            output.textContent = "El nivel seleccionado no está en la lista.";
+        }
+    }
+</script>
+</html>
